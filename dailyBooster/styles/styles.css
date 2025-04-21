@@ -1,1 +1,297 @@
+/* User Manual Button */
+.manual-btn {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #5C6BC0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
 
+/* Modal (Hidden by default) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Existing Styles */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    padding: 30px;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #5C6BC0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 15px 10px;
+    background-color: #5C6BC0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f51b5;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#timer {
+    margin-top: 20px;
+    position: relative;
+}
+
+#mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.mood-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 100px;
+    margin: 10px; 
+}
+
+.mood-card:hover {
+    transform: scale(1.1);
+}
+
+.mood-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.recommendations {
+    margin-top: 20px;
+    display: none;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fun {
+    margin-top: 40px;
+}
+
+.breathing-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5C6BC0;
+    margin: 20px auto;
+    animation: inhale 12s ease-in-out infinite;
+    opacity: 0;
+}
+
+.inhale {
+    animation: inhale 12s ease-in-out forwards;
+}
+
+.hold {
+    animation: hold 8s ease-in-out forwards;
+}
+
+.exhale {
+    animation: exhale 12s ease-in-out forwards;
+}
+
+@keyframes inhale {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hold {
+    0% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes exhale {
+    0% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Joke display styling */
+.joke-display {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ffba3b;
+    color: #1A237E;
+    border-radius: 8px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.joke-display.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.joke-display.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .mood-card {
+        width: 120px; 
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 85%;
+    }
+
+    .manual-btn {
+        padding: 5px;
+        font-size: 15px ;
+    }
+
+    .mood-card {
+        width: 100px; 
+    }
+
+    button {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .joke-display {
+        font-size: 1rem; 
+    }
+}
