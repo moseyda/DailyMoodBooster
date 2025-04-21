@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Booster</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Booster</h1>
+        <p>Select your current mood and let's lift your spirits!</p>
 
+        <button id="manual-btn" class="manual-btn" title="User Manual">📒</button>
+
+        <!-- Mood Selection Section with Animations -->
+        <div id="mood-selector" class="selector">
+            <div class="mood-card" data-mood="happy">
+                <img src="/assets/happy-icon.png" alt="Happy">
+                <p>Happy</p>
+            </div>
+            <div class="mood-card" data-mood="stressed">
+                <img src="/assets/stressed-icon.png" alt="Stressed">
+                <p>Stressed</p>
+            </div>
+            <div class="mood-card" data-mood="tired">
+                <img src="/assets/tired-icon.png" alt="Tired">
+                <p>Tired</p>
+            </div>
+            <div class="mood-card" data-mood="anxious">
+                <img src="/assets/anxious-icon.png" alt="Anxious">
+                <p>Anxious</p>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div id="recommendations" class="recommendations">
+            <h3>Your Recommendation:</h3>
+            <p id="activity"></p>
+            <p id="quote"></p>
+            <button id="try-again-btn">Try Another Mood</button>
+        </div>
+
+        <!-- Fun Break Section -->
+        <div id="fun" class="fun">
+            <h3>Need a Quick Break?</h3>
+            <button id="joke-btn">Tell Me a Joke</button>
+            <div id="joke" class="joke-display"></div>
+            <button id="breathing-btn">Breathing Exercise</button>
+            <div id="timer"></div>
+        </div>
+
+        <!-- Modal for User Manual -->
+        <div id="user-manual-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-btn" class="close-btn">&times;</span>
+                <h2>User Manual</h2>
+                <p>This is the user manual for your Mood Booster!</p>
+                
+                    <P><b>By clicking on the relevant mood, you will receive suggestions for activities and quotes.</b></P>
+                    <i> Remember, each click will show you a new suggestion and quote!</i>
+                    <P><b>Click the Joke button to receive a random joke.</b></P>
+                    <i> The more you click the better jokes you get!</i>
+                    <P><b>Use the Breathing button for a relaxation exercise.</b></P>
+                    <i>Click the button as much as you need to repeat, and relax. Absolutely LIMITLESS!</i> 
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
