@@ -1,4 +1,4 @@
-# DailyMoodBooster
+# dailyBooster
 
 
 A web application designed to uplift your mood with personalized recommendations, lighthearted jokes, and calming breathing exercises. Perfect for quick stress relief or a daily positivity boost!
