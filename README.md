@@ -3,7 +3,7 @@
 
 A web application designed to uplift your mood with personalized recommendations, lighthearted jokes, and calming breathing exercises. Perfect for quick stress relief or a daily positivity boost!
 
-![Demo](https://www.linkedin.com/posts/mohamad-seyda-98874a33b_webdevelopment-studentsupport-moodbooster-activity-7272443783634440192-31aN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFVckPgBtzfxYjID_-RjitIqY4MSClgjRSM)
+https://www.linkedin.com/posts/mohamad-seyda-98874a33b_webdevelopment-studentsupport-moodbooster-activity-7272443783634440192-31aN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFVckPgBtzfxYjID_-RjitIqY4MSClgjRSM
 
 ## Features ✨
 
