@@ -45,18 +45,6 @@ https://www.linkedin.com/posts/mohamad-seyda-98874a33b_webdevelopment-studentsup
 
 **Interactive Elements**: DOM manipulation, event listeners, dynamic styling
 
-**Project Structure** 📂
-
-dailyBooster/
-├── pages/
-│   └── index.html      # Main HTML file
-├── scripts/
-│   └── script.js       # All interactive functionality
-├── styles/
-│   └── styles.css      # Styling and animations
-└── assets/ 
-    └── images.png       # Resources
-
 ## Contributing 🤝
 Contributions are welcome!
 
